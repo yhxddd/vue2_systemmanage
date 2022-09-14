@@ -35,6 +35,10 @@ Vue.use(ElementUI, { locale })
 
 Vue.config.productionTip = false
 
+// 将暴露出来的api挂载到Vue原型对象上，任意组件都能使用API相关接口
+import API from '@/api/index.js'
+Vue.prototype.$API = API
+
 new Vue({
   el: '#app',
   router,

@@ -66,7 +66,7 @@ export const constantRoutes = [
         path: 'trademark',
         name: 'TradeMark',
         component: () => import('@/views/product/tradeMark/index'),
-        meta: { title: '品牌管理'}
+        meta: { title: '品牌管理' }
       },
       {
         path: 'attr',
